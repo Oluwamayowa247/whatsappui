@@ -3,71 +3,61 @@ const info = [
     'name': 'BumbleBee 🐝',
     'message': 'Hey, how are you doing?',
     'time': '3:53 pm',
-    'profilePic':
-        'lib/asset/images/p3.jpeg',
+    'profilePic': 'lib/asset/images/p7.jpeg',
   },
   {
     'name': 'Queen 👑',
     'message': 'Hello, whats up',
     'time': '2:25 pm',
-    'profilePic':
-        'lib/asset/images/p2.jpeg',
+    'profilePic': 'lib/asset/images/p2.jpeg',
   },
   {
     'name': 'My Mama ❤️',
     'message': 'Mayowa, I want to sleep.',
     'time': '1:03 pm',
-    'profilePic':
-       'lib/asset/images/p6.jpeg' ,
+    'profilePic': 'lib/asset/images/p6.jpeg',
   },
   {
     'name': 'Big Sis 🤩',
     'message': 'Call me, have some work',
     'time': '12:06 pm',
-    'profilePic':
-        'lib/asset/images/p5.jpeg',
-  },
-  {
-    'name': 'Mayowa',
-    'message': 'You ate food?',
-    'time': '10:00 am',
-    'profilePic':
-       'lib/asset/images/p1.jpeg',
+    'profilePic': 'lib/asset/images/p5.jpeg',
   },
   {
     'name': 'Hysh 🤪',
     'message': 'Yo!!!!! Long time, no see!?',
     'time': '9:53 am',
-    'profilePic':
-      'lib/asset/images/p3.jpeg',
+    'profilePic': 'lib/asset/images/p8.jpg',
   },
   {
     'name': 'My Own Cat 🐱',
     'message': 'Am I fat?',
     'time': '7:25 am',
-    'profilePic':
-       'lib/asset/images/p4.jpeg',
+    'profilePic': 'lib/asset/images/p4.jpeg',
+  },
+  {
+    'name': 'Mayowa',
+    'message': 'You ate food?',
+    'time': '10:00 am',
+    'profilePic': 'lib/asset/images/p1.jpeg',
   },
   {
     'name': 'Joseph',
     'message': 'I am from International Olym...',
     'time': '6:02 am',
-    'profilePic':
-'lib/asset/images/p3.jpeg',
+    'profilePic': 'lib/asset/images/p3.jpeg',
   },
   {
     'name': 'Sikandar',
     'message': 'Lets Code!',
     'time': '4:56 am',
-    'profilePic':
-       'lib/asset/images/p3.jpeg',
+    'profilePic': 'lib/asset/images/p3.jpeg',
   },
   {
     'name': 'Ian Dooley',
     'message': 'Images by Unsplash',
     'time': '1:00 am',
-    'profilePic':
-        'lib/asset/images/p3.jpeg',
+    'profilePic': 'lib/asset/images/p3.jpeg',
   },
 ];
 
@@ -101,19 +91,9 @@ const messages = [
     "text": "Looks great to me!",
     "time": "11:15 am",
   },
-  
-
   {"isMe": false, "text": "Thanks bro!", "time": "11:17 am"},
-  {
-    "isMe": false,
-    "text": "Did you subscribe?",
-    "time": "11:16 am"
-  },
-  {
-    "isMe": true,
-    "text": "Yes, surely bro!",
-    "time": "11:17 am"
-  },
+  {"isMe": false, "text": "Did you subscribe?", "time": "11:16 am"},
+  {"isMe": true, "text": "Yes, surely bro!", "time": "11:17 am"},
   {
     "isMe": false,
     "text": "Cool, did you like the content?",

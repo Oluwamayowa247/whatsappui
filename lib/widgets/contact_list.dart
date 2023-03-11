@@ -11,47 +11,45 @@ class ContactList extends StatelessWidget {
       padding: EdgeInsets.only(
         top: 10,
       ),
-      child: Column(
-        children: [
-          Expanded(
-            child: ListView.separated(
-              shrinkWrap: true,
-              itemCount: info.length,
-              itemBuilder: ((context, index) {
-                return InkWell(
-                  onTap: (){},
-                  child: ListTile(
-                    title: Text(
-                      info[index]['name'].toString(),
+      child: ListView.builder(
+        shrinkWrap: true,
+        itemCount: info.length,
+        itemBuilder: ((context, index) {
+          return Column(
+            children: [
+              InkWell(
+                onTap: () {},
+                child: ListTile(
+                  title: Text(
+                    info[index]['name'].toString(),
+                  ),
+                  trailing: Text(
+                    info[index]['time'].toString(),
+                    style: TextStyle(fontSize: 10),
+                  ),
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage(
+                      info[index]['profilePic'].toString(),
                     ),
-                    trailing: Text(
-                      info[index]['time'].toString(),
-                      style: TextStyle(fontSize: 12),
-                    ),
-                    leading: CircleAvatar(
-                      backgroundImage: AssetImage(
-                        info[index]['profilePic'].toString(),
-                      ),
-                    ),
-                    subtitle: Padding(
-                      padding: const EdgeInsets.only(top: 8.0),
-                      child: Text(
-                        info[index]['message'].toString(),
-                        style: TextStyle(fontSize: 17),
-                      ),
+                    radius: 20,
+                  ),
+                  subtitle: Padding(
+                    padding: const EdgeInsets.only(top: 8.0),
+                    child: Text(
+                      info[index]['message'].toString(),
+                      style: TextStyle(
+                          fontSize: 13, overflow: TextOverflow.ellipsis),
                     ),
                   ),
-                );
-              }),
-              separatorBuilder: (BuildContext context, int index) {
-                return const Divider(
-                  color: dividerColor,
-                  height: 30,
-                );
-              },
-            ),
-          ),
-        ],
+                ),
+              ),
+              Divider(
+                color: dividerColor,
+                height: 30,
+              ),
+            ],
+          );
+        }),
       ),
     );
   }
