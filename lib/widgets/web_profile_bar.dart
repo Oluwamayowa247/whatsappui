@@ -21,7 +21,7 @@ class WebProfileBar extends StatelessWidget {
         children: [
           CircleAvatar(
             backgroundImage: AssetImage(
-              "lib/asset/images/p7.jpeg",
+              "lib/asset/images/p1.jpeg",
             ),
             radius: 20,
           ),

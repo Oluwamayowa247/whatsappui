@@ -22,14 +22,20 @@ class WebSeaarchBar extends StatelessWidget {
           decoration: InputDecoration(
               filled: true,
               fillColor: searchBarColor,
-              prefixIcon:
-                  Padding(padding: EdgeInsets.symmetric(horizontal: 15)),
+              prefixIcon: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 15),
+                child: Icon(
+                  Icons.search,
+                  size: 15,
+                ),
+              ),
               hintText: 'Search or start a new chat',
               hintStyle: TextStyle(fontSize: 12),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(15),
                 borderSide: BorderSide(width: 0, style: BorderStyle.none),
-              )
+              ),
+              contentPadding: const EdgeInsets.all(10)
 
               // ),
               ),
