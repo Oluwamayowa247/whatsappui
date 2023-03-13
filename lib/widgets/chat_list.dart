@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/info.dart';
-import 'package:whatsapp_clone/widgets/sender_message_card.dart';
+import 'package:whatsapp_clone/widgets/my_message_card.dart';
+import 'package:whatsapp_clone/widgets/second_message_card.dart';
 
 class ChatList extends StatelessWidget {
   const ChatList({super.key});
@@ -12,13 +13,16 @@ class ChatList extends StatelessWidget {
       itemBuilder: (BuildContext context, int index) {
         if (messages[index]["isMe"] == true) {
           //My message card
-          return SenderMessageCard(
+          return MyMessageCard(
             messages: messages[index]['text'].toString(),
             time: messages[index]['time'].toString(),
           );
         }
         //sender card
-        return Text('Wunmi is mad');
+        return SecondMessageCard(
+          messages: messages[index]['text'].toString(),
+          time: messages[index]['time'].toString(),
+        );
       },
     );
   }
